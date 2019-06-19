@@ -146,13 +146,6 @@ html , body{
 .left_col {
     background: #2A3F54
 }
-.nav-sm .container.body .col-md-3.left_col {
-    min-height: 100%;
-    width: 70px;
-    padding: 0;
-    z-index: 9999;
-    position: absolute
-}
 .nav-sm .container.body .col-md-3.left_col.menu_fixed {
     position: fixed;
     height: 100%
@@ -166,7 +159,6 @@ html , body{
 }
 .nav-sm .container.body .right_col {
     padding: 10px 20px;
-    margin-left: 70px;
     z-index: 2
 }
 .nav-sm .navbar.nav_title {
@@ -190,7 +182,6 @@ html , body{
 }
 .nav-sm .main_container .top_nav {
     display: block;
-    margin-left: 70px;
     z-index: 2
 }
 .nav-sm .nav.side-menu li a {
@@ -203,12 +194,7 @@ html , body{
 .nav-sm .nav.side-menu li.active-sm {
     border-right: 5px solid #1ABB9C
 }
-.nav-sm ul.nav.child_menu ul,
-.nav-sm .nav.side-menu li.active-sm ul ul {
-    position: static;
-    width: 200px;
-    background: none
-}
+
 .nav-sm>.nav.side-menu>li.active-sm>a {
     color: #1ABB9C !important
 }
@@ -219,7 +205,6 @@ html , body{
     font-size: 25px !important;
     text-align: center;
     width: 100% !important;
-    margin-bottom: 5px
 }
 .nav-sm ul.nav.child_menu {
     left: 100%;
@@ -337,25 +322,13 @@ html , body{
         position: static
     }
 }
-.nav-md .container.body .col-md-3.left_col {
-    min-height: 100%;
-    width: 230px;
-    padding: 0;
-    position: absolute;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 1
-}
+
 .nav-md .container.body .col-md-3.left_col.menu_fixed {
     height: 100%;
     position: fixed
 }
 body .container.body .right_col {
     background: #F7F7F7
-}
-.nav-md .container.body .right_col {
-    padding: 10px 20px 0;
-    margin-left: 230px
 }
 .nav_title {
     width: 230px;
@@ -492,7 +465,7 @@ body .container.body .right_col {
 }
 body {
     color: #73879C;
-    background: #2A3F54;
+    background: #F7F7F7;
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -500,7 +473,6 @@ body {
 }
 .main_container .top_nav {
     display: block;
-    margin-left: 230px
 }
 .no-padding {
     padding: 0 !important
@@ -684,7 +656,6 @@ a:focus {
 }
 .top_nav .navbar-right {
     margin: 0;
-    width: 70%;
     float: right
 }
 .top_nav .navbar-right li {
@@ -915,9 +886,6 @@ footer {
     padding: 15px 20px;
     display: block
 }
-.nav-sm footer {
-    margin-left: 70px
-}
 .footer_fixed footer {
     position: fixed;
     left: 0px;
@@ -1056,7 +1024,7 @@ h2 {
 .accordion .panel:hover {
     background: #F2F5F7
 }
-.x_panel {
+.x_panel, .nav, .tab-pane {
     position: relative;
     width: 100%;
     margin-bottom: 10px;
@@ -1702,7 +1670,6 @@ span.right {
 }
 @media (min-width: 992px) {
     footer {
-        margin-left: 230px
     }
 }
 @media (min-width: 992px) {

@@ -31,52 +31,11 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
-              <a href="inbox.html" class="site_title"><i class="fa fa-magic"></i> <span>Acme Shoes</span></a>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <!-- menu profile quick info -->
-            <div class="profile clearfix">
-              <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-              </div>
-              <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <h3>General</h3>
-                <ul class="nav side-menu">
-                  <li><a href="inbox.html"><i class="fa fa-home"></i> Inbox </a>
-                  </li>
-                  <li><a href="reports.html"><i class="fa fa-bar-chart"></i> Reports </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- /sidebar menu -->
-          </div>
-        </div>
 
         <!-- top navigation -->
         <div class="top_nav">
           <div class="nav_menu">
             <nav>
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
 
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
@@ -96,74 +55,83 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main">
+        <div class="right_col" role="main" text="center">
           <div class="">
-            <div class="page-title">
-              <div class="title_left">
-                <h3>Inbox</h3>
-              </div>
-
-              <!--div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                  </div>
-                </div>
-              </div-->
-            </div>
 
             <div class="clearfix"></div>
-            
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Brochures<small>Details</small></h2>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-                    <!--p class="text-muted font-13 m-b-30">
-                    </p-->
-                    
-                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                      <thead>
-                        <tr>
-                          <th>Sl No</th>
-                          <th>Details</th>
-                          <th>Amount (Rs)</th>
-                          <th>Date</th>
-                          <th>Time</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>ABC Brochure</td>
-                          <td>350</td>
-                          <td>14-06-2019</td>
-                          <td>15:31</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>PQR Brochure</td>
-                          <td>700</td>
-                          <td>03-06-2019</td>
-                          <td>10:50</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>XYZ Brochure</td>
-                          <td>440</td>
-                          <td>29-05-2019</td>
-                          <td>18:20</td>
-                        </tr>
-                      </tbody>
-                    </table>
+              <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#inbox">Inbox</a></li>
+                <li><a data-toggle="pill" href="#reports">Reports</a></li>
+                <li><a data-toggle="pill" href="#coupons">Coupons</a></li>
+                <li><a data-toggle="pill" href="#help">Help</a></li>
+              </ul>
+              
+              <div class="tab-content">
+                <div id="inbox" class="tab-pane fade in active">
+                  <h3>Inbox</h3>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                          <div class="x_title">
+                            <h2>Brochures<small>Details</small></h2>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="x_content">
+                            <!--p class="text-muted font-13 m-b-30">
+                            </p-->
+                            
+                            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Sl No</th>
+                                  <th>Details</th>
+                                  <th>Amount (Rs)</th>
+                                  <th>Date</th>
+                                  <th>Time</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>ABC Brochure</td>
+                                  <td>350</td>
+                                  <td>14-06-2019</td>
+                                  <td>15:31</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>PQR Brochure</td>
+                                  <td>700</td>
+                                  <td>03-06-2019</td>
+                                  <td>10:50</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>XYZ Brochure</td>
+                                  <td>440</td>
+                                  <td>29-05-2019</td>
+                                  <td>18:20</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="reports" class="tab-pane fade">
+                  <h3>Reports</h3>
+                  <p>USer reports comes here </p>
+                </div>
+                <div id="coupons" class="tab-pane fade">
+                  <h3>Coupons</h3>
+                  <p>Discount Coupons comes here</p>
+                </div>
+                <div id="help" class="tab-pane fade">
+                  <h3>Help</h3>
+                  <p>You can reach to customer support here</p>
                 </div>
               </div>
-            </div>
+            
+            
           </div>
         </div>
         <!-- /page content -->

@@ -2475,7 +2475,7 @@ if (typeof NProgress != 'undefined') {
 				
 				var handleDataTableButtons = function() {
 				  if ($("#datatable-responsive").length) {
-					$("#datatable-responsive").DataTable({
+					/*$("#datatable-responsive").DataTable({
 					  dom: "Blfrtip",
 					  buttons: [
 						{
@@ -2500,7 +2500,7 @@ if (typeof NProgress != 'undefined') {
 						},
 					  ],
 					  responsive: true
-					});
+					});*/
 				  }
 				};
 
